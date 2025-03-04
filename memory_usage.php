@@ -5,11 +5,11 @@
 class MemoryUsage {
     public function getMemoryUsage() {
         $cuuren_memory = memory_get_usage();
-        $peak_momory = memory_get_peak_usage();
+        $peak_memory = memory_get_peak_usage();
         $memory_limit = ini_get('memory_limit');
 
         $current_mb = round($cuuren_memory / 1024 / 1024, 2);
-        $peak_mb = round($peak_momory / 1024 / 1024, 2);
+        $peak_mb = round($peak_memory / 1024 / 1024, 2);
 
         return [
           'current' => $current_mb,

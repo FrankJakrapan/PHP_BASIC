@@ -1,0 +1,16 @@
+<xml>
+    <products>
+        <product>
+            <name>Product 1</name>
+            <price>100</price>
+        </product>
+        <product>
+            <name>Product 2</name>
+            <price>200</price>
+        </product>
+        <product>
+            <name>Product 3</name>
+            <price>300</price>
+        </product>
+    </products>
+</xml>

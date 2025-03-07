@@ -8,13 +8,17 @@ function first($A){
     }
 }
 
-function myNumber1($A){
-    if($A > 0){
-        echo "ข้อที่ 2 = ".($A / 2) % 2 ." <br>";
-    }else{
-        echo '0';
+function myNumber1($A) {
+    if ($A > 0) {
+        myNumber1(intval($A / 2)); // ใช้ intval() ป้องกันค่าทศนิยม
+        echo ($A % 2);
+    } else {
+        echo "0"; // Base Case และขึ้นบรรทัดใหม่
+        return; // หยุด recursion
     }
 }
+
+
 
 function forLoop(){ 
     for($i = -2; $i <= 2; $i++){
@@ -34,6 +38,8 @@ echo"<br>ข้อที่ 1 <br>";
 first(130);
 echo"<br>ข้อที่ 2 <br>";
 myNumber1(6);
+echo"<br>";
+myNumber1(7);
 echo"<br>ข้อที่ 3 <br>";
 forLoop();
 
